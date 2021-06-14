@@ -29,7 +29,3 @@ export async function getStaticProps(context) {
     revalidate: 1,
   };
 }
-
-export async function getStaticPaths() {
-  
-}
