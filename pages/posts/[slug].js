@@ -1,12 +1,29 @@
+import Layout from "../../components/layout";
 import { getSinglePost, getPosts } from "../../lib/functions";
+import Head from "next/head";
+import Date from '../../components/date'
+import utilStyles from '../../styles/utils.module.css'
 
-const PostPage = (props) => {
+const PostPage = ({ post }) => {
   return (
-    <div>
-      <img src={props.post.feature_image} />
-      <h1>{props.post.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
-    </div>
+    <Layout>
+        <Head>
+          <title>{post.title}</title>
+        </Head>
+        <img className={utilStyles.featureImage} src={post.feature_image} />
+        <article>
+          <h1 className={utilStyles.headingXl}>{post.title}</h1>
+          <div className={utilStyles.lightText}>
+            <Date dateString={post.published_at} />
+          </div>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </article>
+      </Layout>
+    // <div>
+    //   <img src={props.post.feature_image} />
+    //   <h1>{props.post.title}</h1>
+    //   <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
+    // </div>
   );
 };
 
