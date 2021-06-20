@@ -22,3 +22,7 @@ a:hover {
 img {
   width: 100%;
 }
+
+article p, ol {
+  line-height: 1.5rem;
+}
