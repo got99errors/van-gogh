@@ -19,11 +19,6 @@ const PostPage = ({ post }) => {
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
       </Layout>
-    // <div>
-    //   <img src={props.post.feature_image} />
-    //   <h1>{props.post.title}</h1>
-    //   <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
-    // </div>
   );
 };
 
