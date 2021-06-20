@@ -30,15 +30,6 @@ const Index = ({posts}) => (
         </ul>
       </section>
     </Layout>
-  // <ul>
-  //   {props.posts.map((post) => (
-  //     <li key={post.id}>
-  //       <Link href={`/posts/${post.slug}`}>
-  //         <a>title: {post.title}</a>
-  //       </Link>
-  //     </li>
-  //   ))}
-  // </ul>
 );
 
 export default Index;
