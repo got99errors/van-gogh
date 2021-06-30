@@ -64,14 +64,6 @@ export default function Layout({ children, home }) {
 				<div>{children}</div>
 				<aside className={styles.rightSidebar}></aside>
 			</main>
-
-			{!home && (
-				<div className={styles.backToHome}>
-					<Link href="/">
-						<a>← Back to home</a>
-					</Link>
-				</div>
-			)}
 		</div>
 	);
 }
