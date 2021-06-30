@@ -4,6 +4,7 @@ import Head from "next/head"
 import Date from '../components/date'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
+import Location from '../components/side_comp/location'
 
 const Index = ({posts}) => (
   <Layout home>

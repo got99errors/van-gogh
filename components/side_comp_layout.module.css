@@ -1,0 +1,22 @@
+.container {
+    max-width: 80%;
+    /* margin: 5px */
+    /* background-color: yellow; */
+}
+
+.sideComp {
+    margin: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+}
+
+.sideComp div {
+    margin-top: 5px;
+}

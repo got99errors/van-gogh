@@ -3,6 +3,8 @@ import { getSinglePost, getPosts } from "../../lib/functions";
 import Head from "next/head";
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
+import styles from "../../components/layout.module.css";
+import Link from "next/link";
 
 const PostPage = ({ post }) => {
   return (
@@ -18,6 +20,11 @@ const PostPage = ({ post }) => {
           </div>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
+        <div className={styles.backToHome}>
+					<Link href="/">
+						<a>← Back to home</a>
+					</Link>
+				</div>
       </Layout>
   );
 };
